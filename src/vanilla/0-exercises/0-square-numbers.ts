@@ -1,7 +1,11 @@
-function squareNumbers() {
-  // your code here
+import { bigNumbers } from "../0-examples/3-big-numbers";
+
+function squareNumbers(numbers:number[]) : number[] {
+  return numbers.map(squareNumber)
 }
 
-function squareNumber() {}
+function squareNumber(n:number):number {
+  return n **2
+}
 
 export { squareNumbers, squareNumber };

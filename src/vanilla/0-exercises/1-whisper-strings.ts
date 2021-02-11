@@ -1,9 +1,11 @@
-function whisperStrings() {
-  // your code here
-}
+import { stringifyBoolean } from "./2-stringify-booleans";
 
-function whisperString() {
-  // your code here
-}
+function whisperStrings(strings:string[]):string[] {
+  return strings.map(whisperString)
+};
+
+function whisperString(s:string):string {
+  return "shh: " + s.toLowerCase()
+};
 
 export { whisperStrings, whisperString };
