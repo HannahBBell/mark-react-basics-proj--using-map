@@ -2,8 +2,8 @@ import { stringifyBoolean, stringifyBooleans } from "./2-stringify-booleans";
 
 describe("stringifyBoolean - takes the string or Boolean representation of a Boolean, and returns it as a string", () => {
   test("converting Booleans to strings", () => {
-    expect(stringifyBoolean(true)).toBe("T");
-    expect(stringifyBoolean(false)).toBe("F");
+    expect(stringifyBoolean(true)).toBe("true");
+    expect(stringifyBoolean(false)).toBe("false");
   });
 
   test("Preserving strings", () => {
